@@ -390,7 +390,6 @@ d_fil %>%
         axis.text = element_text(size = 10),
         legend.position = "none") +
   scale_x_continuous(breaks = seq(10, 40, by = 5)) +
-  scale_y_continuous(labels = scales::percent) +
   scale_fill_manual(values = c("grey", "white"))
 
 #Supplemental Figure 2
