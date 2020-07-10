@@ -21,3 +21,4 @@ We obtained the correction for the Cq values by calculating the mean Cq of the t
 9. ```corr_cq```: The Cq value corrected as explained above.
 
 ## *sim_code.R*
+This is the code we used to perform the simulations. The code is commented and divided in sections.
