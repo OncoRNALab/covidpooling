@@ -1,7 +1,8 @@
 # Evaluation of efficiency and practicality of 1D and 2D sample pooling strategies for diagnostic screening purposes
-In this GitHub repository, you can find the code we used for the simulations and the dataset we used for sampling.
+In this GitHub repository, you can find the code we used for the simulations and the dataset we used for sampling both for the bioRxiv and the manuscript.
 
-## _filtered_cq.csv_
+## bioRxiv
+### _filtered_cq.csv_
 This .csv file contains the filtered dataset that was used for the sampling to set the initial situations in the simulations. We applied the following filters to the raw data.
 * Full qPCR plates
 * Less than 10 positive samples per RNA plate
@@ -9,7 +10,7 @@ This .csv file contains the filtered dataset that was used for the sampling to s
 
 We obtained the correction for the Cq values by calculating the mean Cq of the two positive controls per qPCR plate and calculating the difference of these averages with the global average of the positive controls. 
 
-### Column information
+#### Column information
 1. ```plate_id```: Unique identifier of the qPCR plate the sample belongs to.
 2. ```sample```: Unique identifier of the sample.
 3. ```sample_type```: Since only positive samples are included, the sample_type is always ```std```(for standard).
@@ -20,5 +21,5 @@ We obtained the correction for the Cq values by calculating the mean Cq of the t
 8. ```wells```: The well of the reaction. 
 9. ```corr_cq```: The Cq value corrected as explained above.
 
-## *sim_code.R*
+### *sim_code.R*
 This is the code we used to perform the simulations. The code is commented and divided in sections. It includes the simulations, data wrangling and code for the figures.
