@@ -23,3 +23,17 @@ We obtained the correction for the Cq values by calculating the mean Cq of the t
 
 ### *sim_code.R*
 This is the code we used to perform the simulations. The code is commented and divided in sections. It includes the simulations, data wrangling and code for the figures.
+
+
+## jmd
+### _data_first_wave.csv_ and _data_second_wave.csv_
+These datasets are only filtered for high-confidence data (good negative and positive controls). They are also not corrected for interplate differences.
+
+### Column information
+1. ```sample```: Unique identifier of the sample.
+2. ```date```: Date and time at which the corresponding run was initiated.
+3. ```cq```: Cq value 
+
+### *simulations.R*
+This is the code we used to perform the simulations.
+
