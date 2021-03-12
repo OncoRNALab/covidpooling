@@ -2,8 +2,8 @@
 library(tidyverse)
 
 ### Load and get data ready for the simulations
-fw <- read_csv("../../Data/data_first_wave.csv")
-sw <- read_csv("../../Data/data_second_wave.csv")
+fw <- read_csv("data_first_wave.csv")
+sw <- read_csv("data_second_wave.csv")
 
 for_sim_fw <- fw %>%
   mutate(week = 1+abs(as.double(round(difftime(as.Date(strftime(min(first_wave$date), format="%Y-%m-%d")), date, units = "days") / 7)))) %>%
