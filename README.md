@@ -1,4 +1,4 @@
-# Evaluation of efficiency and practicality of 1D and 2D sample pooling strategies for diagnostic screening purposes
+# Evaluation of efficiency and sensitivity of 1D and 2D sample pooling strategies for SARS-CoV-2 RT-qPCR screening purposes
 In this GitHub repository, you can find the code we used for the simulations and the dataset we used for sampling both for the bioRxiv and the manuscript.
 
 ## bioRxiv
